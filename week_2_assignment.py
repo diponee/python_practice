@@ -11,7 +11,7 @@ while attempts < max_attempts:
         break 
         
     else:
-        print("Access Denied, Try Again")
+        print("Unauthorized User, Try Again")
         attempts += 1
         if attempts == max_attempts:
             print("Too many attempts. Access Locked.")  
