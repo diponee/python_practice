@@ -10,8 +10,8 @@ while attempts < max_attempts:
         print("Access Granted")
         break 
         
-    else:
-        print("Unauthorized User, Try Again")
-        attempts += 1
-        if attempts == max_attempts:
-            print("Too many attempts. Access Locked.")  
+    # else:
+    #     print("Unauthorized User, Try Again")
+    #     attempts += 1
+    #     if attempts == max_attempts:
+    #         print("Too many attempts. Access Locked.")  
