@@ -8,14 +8,14 @@ while attempts < max_attempts:
   guess = input()
   if guess.isdigit():
     guess = int(guess)
+    attempts += 1
     if guess == correct_number:
       print('Congratulations! You guessed right!')
       break
     elif guess< correct_number:
       print("Too low! Try again. Enter another number")
     else:
-      print("Too high! Try again. Enter another number")
-    attempts += 1
+      print("Too high! Try again. Enter another number")    
   else:
     print("Try again. Enter a valid number")
 if attempts == max_attempts:
