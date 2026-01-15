@@ -1,8 +1,8 @@
 import random
 print("Welcome to Knowledge Play Zone!")
-playing = input("Do you want to play? Yes/No: ")
+playing = input("Do you want to play? ")
 if playing.lower() != "yes":
-  quit ("Sad to see you go. See you some other time.")
+  quit()
 print("Let's do this")
 score = 0
 questions = [

@@ -1,7 +1,17 @@
-def is_palindrome(word):
-  return word == word[::-1]
-word = input("Enter the word you want to check: ").strip().lower()
-if is_palindrome(word):
-  print("The word is a palindrome.")
-else:
-  print("The word is not a palindrome.")
+password = "fight club"
+attempts = 0
+max_attempts = 3
+
+while attempts < max_attempts:
+    
+    login = str(input("Enter your password: ")).casefold()
+    print(login)
+    if login == password:
+        print("Access Granted")
+        break 
+        
+    else:
+        print("Unauthorized, Try Again")
+        max_attempts -= 1
+        if attempts == max_attempts:
+            print("Too many attempts. Access Locked.")  
